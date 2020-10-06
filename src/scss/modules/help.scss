@@ -1,0 +1,30 @@
+.help {
+  background-color: $default-color;
+  &__title {
+    @include sectionTitle;
+    text-align: center;
+    padding-top: 130px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    padding: 42px 42px;
+    img {
+      object-fit: contain;
+      height: 55px;
+    }
+    p {
+      font-size: 20px;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.contacts {
+  padding-bottom: 28px;
+  background-color: #000;
+   @include media-breakpoint-up(lg) {
+     background-image: url(../img/dog-footer.png);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-color: none;
+   }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-up(lg) {
+      justify-content: start;
+    }
+  }
+  &__group {
+      width: 300px;
+      &:last-child {
+         @include media-breakpoint-up(lg) {
+           margin-left: 180px;
+         }
+      }
+    h2 {
+      color: $neutral-regular;
+      @include sectionTitle;
+      margin-top: 80px;
+    }
+  }
+  &__linkWrap {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+  }
+  a {
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: $adddressFont;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,45 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+html {
+  scroll-behavior: smooth;
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a { text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+// Modules
+@import 'modules/header';
+@import 'modules/about.scss';
+@import 'modules/donation.scss';
+@import 'modules/pets.scss';
+@import 'modules/owl-nav.scss';
+@import 'modules/help.scss';
+@import 'modules/contacts.scss';

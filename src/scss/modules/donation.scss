@@ -1,0 +1,42 @@
+.donation {
+  background-color: $neutral-bg;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  &__image {
+    @include posImg;
+    @include media-breakpoint-up(md) {
+      margin-right: 40px;
+    }
+  }
+  &__info {
+    h2 {
+      @include sectionTitle;
+      margin-bottom: 30px;
+      @include media-breakpoint-up(xs){
+        margin-top: 30px;
+      }
+      @include media-breakpoint-up(md) {
+        margin-top: 0;
+      }
+    }
+    input {
+      padding: 16px;
+      padding-left: 60px;
+      border-radius: 9px;
+      margin-top: 15px;
+      background-color: $primary-color;
+      background-image: url(../img/credit-card.png);
+      background-repeat: no-repeat;
+      background-position: 5% center;
+      &::placeholder {
+        color: $neutral-btnColor;
+      }
+    }
+    p {
+      font-family: $descriptionFont;
+      font-style: italic;
+      color: $neutral-secondary;
+      margin-top: 33px;
+    }
+  }
+}

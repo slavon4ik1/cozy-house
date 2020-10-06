@@ -1,0 +1,24 @@
+@mixin btn {
+  font-size: 17px;
+  color: $neutral-btnColor;
+  background-color: $primary-color;
+  padding: 18px 44px 21px 44px;
+  border-radius: 30px;
+}
+@mixin description {
+  font-family: $descriptionFont;
+  line-height: 1.4;
+  margin-top: 45px;
+  margin-bottom: 55px;
+  max-width: 85%;
+}
+@mixin sectionTitle {
+  font-size: $secondaryFontTitleSize; 
+}
+
+@mixin posImg {
+  object-fit: contain;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}

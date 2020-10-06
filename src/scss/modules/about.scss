@@ -1,0 +1,29 @@
+.about {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  &__image {
+    @include posImg;
+    @include media-breakpoint-up(md) {
+      margin-left: 40px;
+    }
+  }
+  &__info {
+    h2 {
+      @include sectionTitle;
+      @include media-breakpoint-up(md) {
+        max-width: none;
+      }
+      @include media-breakpoint-up(lg) {
+        max-width: 70%;
+      }
+      @include media-breakpoint-up(xl) {
+        max-width: 50%;
+      }
+      margin-top: 26px;
+    }
+    p {
+      @include description;
+      margin-bottom: 0;
+    }
+  }
+}

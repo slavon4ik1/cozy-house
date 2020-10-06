@@ -1,0 +1,45 @@
+.owl-nav {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+   @include media-breakpoint-up(xs) {
+     display: none;
+   }
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+}
+.owl-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:$default-color !important;
+  border: 2px solid $primary-color !important;
+  transition: all .3s;
+  left: -70px;
+  &:hover {
+    background-color: $primary-color !important;
+  }
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.owl-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $default-color !important;
+  border: 2px solid $primary-color !important;
+  transition: all .3s;
+  right: -70px;
+  &:hover {
+    background-color: $primary-color !important;
+  }
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
